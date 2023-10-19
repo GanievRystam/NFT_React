@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+    margin-bottom: 250px;
+    &-img{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        &__man {
+            max-width: 628px;
+            width: 100%;
+            height: 100%;
+        }
+        &__wrap {
+            position: relative;
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .header-img {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        &__man {
+            margin-top: 25px;
+            max-width: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .header-img {
+        .btnGreen__offer {
+            font-size: 16px;
+        }
+        &__man {
+            margin-top: 16px;
+            max-width: 321px;
+        }
+    }
+}

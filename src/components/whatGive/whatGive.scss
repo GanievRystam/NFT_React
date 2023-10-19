@@ -1,0 +1,90 @@
+.whatGive {
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(51, 62, 81, 1);
+    backdrop-filter: blur(30.5px);
+    width: 300px;
+    height: 310px;
+    padding: 45px 19px;
+    box-sizing: border-box;
+    margin-top: 70px;
+    z-index: 2;
+    position: relative;
+
+    &::after {
+        content: '';
+        border-radius: 20px;
+        background: rgba(51, 62, 81, 0.60);
+        backdrop-filter: blur(27.5px);
+        width: 260px;
+        height: 268px;
+        position: absolute;
+        display: block;
+        bottom: -20px;
+        left: 20px;
+        z-index: -111111;
+    }
+
+    &__text {
+        color: #FFF;
+        max-width: 262px;
+        text-align: center;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: -0.7px;
+    }
+    &__img{
+        margin: 0 auto;
+        display: block;
+    
+    }
+}
+@media screen and (max-width: 840px) {
+    .whatGive {
+        width: 260px;
+        height: 273px;
+        margin-top: 52px;
+        position: relative;  
+        &:first-child {
+            &::before {
+                content: '';
+                width: 22px;
+                height: 22px;
+                top: -25px;
+                left: -12px;
+                position: absolute;
+                background-image: url('../../../public/img/offer/Ellipse 26.svg');
+                background-size: cover;
+            }
+        }  
+        &:last-child {
+            &::before {
+                content: '';
+                width: 62px;
+                height: 62px;
+                bottom: -80px;
+                right: -24px;
+                position: absolute;
+                background-image: url('../../../public/img/offer/Ellipse 25.svg');
+                background-size: cover;
+            }
+        }  
+        
+        &__text {
+            font-size: 16px;
+        }
+        &__img {
+            width: 83px;
+            height: 83px;
+        }
+        &::after {
+            width: 220px;
+            height: 268px;
+            bottom: -20px;
+            bottom: -17px;
+        }
+    }
+  }
+ 

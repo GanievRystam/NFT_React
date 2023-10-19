@@ -1,0 +1,98 @@
+.email {
+    max-width: 670px;
+    height: 425px;
+    width: 100%;
+    padding: 34px 40px 0 70px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    position: absolute;
+    overflow: hidden;
+    background: radial-gradient(207.54% 112.44% at 15.58% -40.39%, #323E51 0%, #1D2532 100%);
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    &-open {
+        display: block;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 425px;
+        top: 0;
+        height: 386px;
+        border-radius: 425px;
+        right: -170px;
+        top: -127px;
+        background: linear-gradient(171deg, rgba(195, 243, 58, 0.25) 25.59%, rgba(41, 209, 89, 0.25) 100.44%);
+        filter: blur(86px);
+        z-index: -1;
+    }
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        &__exit {
+            cursor: pointer;
+            width: 45px;
+            height: 45px;
+        }
+        &__head {
+            color: #FFF;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 105%; 
+            letter-spacing: -1.35px;
+            margin-bottom: 4px;
+            margin-top: 22px;
+        }
+    }
+    &__text {
+        color: #FFF;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        max-width: 460px;
+        line-height: 120%;
+        margin-bottom: 35px;
+    }
+    &__input {
+        border-radius: 10px;
+        background: #FFF;
+        color: #757575;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        max-width: 471px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 20px 15px 20px;
+    }
+
+}
+@media screen and (max-width: 690px) {
+    .email {
+        max-width: 320px;
+        height: 337px;
+        width: 100%;
+        padding: 16px 16px 0 16px;
+        &-header {
+            &__head {
+                font-size: 23px;
+                margin-top: 29px;
+            }
+            &__exit {
+                width: 34px;
+                height: 34px;
+            }
+        }
+        &__text {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+    }
+}

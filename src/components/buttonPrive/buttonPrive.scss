@@ -1,0 +1,22 @@
+.btnPrive {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 16px 22px;
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    text-decoration: none;
+    width: 180px;
+    box-sizing: border-box;
+    height: 51px;
+}
+
+.btnPrive:hover, .btnPrive-active  {
+    color: #C3F33B;
+    border: 1px solid #C3F33B;
+}
+.btnPrive-active {
+    background: rgba(224, 255, 172, 0.05);
+    backdrop-filter: blur(7.5px)
+}

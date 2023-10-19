@@ -1,0 +1,127 @@
+.offer {
+    max-width: 720px;
+    width: 59%;
+    position: relative;
+
+    &__head {
+        color: #FFF;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 105%; 
+        letter-spacing: -2.16px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    &__text{
+        color: #CECECE;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        max-width: 500px;
+        width: 100%; 
+        margin-bottom: 0px;
+        &_under {
+            display: none;
+        }
+    }
+    &__head_bold {
+        font-weight: 700;
+    }
+    &__ellipse {
+        width: 87px;
+        height: 87px;
+        position: absolute;
+        top: -52px;
+        right: 138px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .offer {
+        &__head {
+            font-size: 65px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .offer {
+        width: 75%;
+        &__head {
+            font-size: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 1073px) {
+    .offer {
+        &__ellipse {
+            right: -20px;
+        }
+        &__head {
+            font-size: 55px;
+        }
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .offer {
+        &__text {
+            font-size: 19px;
+        }
+        &__ellipse {
+            top: -75px;
+            right: -20px;
+        }
+        &__head {
+            margin-top: -30px;
+            font-size: 45px;
+        }
+    }
+}
+@media screen and (max-width: 840px) {
+    .offer {
+        .btnGreen {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        &__text {
+            display: none;
+    
+            &_under {
+                max-width: 359px;
+                margin: 0 auto;
+                display: block;
+                font-size: 18px;
+            }
+        }
+        &__ellipse {
+            display: none;
+        }
+        &__head {
+            font-size: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .offer {
+        &__text {
+            display: none;
+    
+            &_under {
+                max-width: 239px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        &__head {
+            margin: 0 auto;
+            max-width: 248px;
+            font-size: 25px;
+            letter-spacing: -0.75px;
+        }
+    }
+}
